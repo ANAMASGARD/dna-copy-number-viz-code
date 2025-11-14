@@ -46,7 +46,7 @@ intreg$intervals$pred.L <-
 intreg.errors <- 
   animint(
        title="Max-margin interval regression for supervised segmentation model selection",
-       source="https://github.com/tdhock/animint/blob/master/inst/examples/intreg.R",
+       source="https://github.com/ANAMASGARD/dna-copy-number-viz-code/blob/main/intreg.R",
        
        signal=ggplot()+
        theme_animint(height=300, width=800)+       
@@ -115,4 +115,3 @@ intreg.errors <-
 print("Visualization created successfully!")
 print(paste("Title:", intreg.errors$title))
 print(paste("Source:", intreg.errors$source))
-
