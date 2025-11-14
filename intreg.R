@@ -49,7 +49,8 @@ intreg.errors <-
        source="https://github.com/ANAMASGARD/dna-copy-number-viz-code/blob/main/intreg.R",
        
        signal=ggplot()+
-       theme_animint(height=300, width=800)+       
+       theme_bw()+
+       theme_animint(height=300, width=800, last_in_row=TRUE)+       
        scale_x_continuous("position on chromosome (mega base pairs)",
                           breaks=c(100,200))+
        ylab("noisy copy number logratio signal")+
@@ -81,7 +82,6 @@ intreg.errors <-
        penalty=ggplot()+
          theme_bw()+
          theme_animint(height=500, width=800)+
-         theme(panel.margin=grid::unit(0, "cm"))+
        geom_tallrect(aes(xmin=min.L, xmax=max.L),
                      showSelected="signal",
                      clickSelects="segments",
@@ -115,3 +115,4 @@ intreg.errors <-
 print("Visualization created successfully!")
 print(paste("Title:", intreg.errors$title))
 print(paste("Source:", intreg.errors$source))
+
