@@ -112,6 +112,10 @@ intreg.errors <-
        facet_grid(what~., scales="free")
   )
 
+if(FALSE){
+  animint2pages("dna-copy-number-large-margin")
+}
+
 print("Visualization created successfully!")
 print(paste("Title:", intreg.errors$title))
 print(paste("Source:", intreg.errors$source))
